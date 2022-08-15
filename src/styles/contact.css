@@ -1,0 +1,24 @@
+
+.contact{
+    height: 100%;
+    width: 90%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+}
+.about-us{
+    font-family: 'Silkscreen', cursive;
+    font-size: 6rem;
+    color:white;
+    transition: all 0.5s;
+}
+.description{
+    font-size: 3rem;
+    color:white;
+}
+
+.about-us:hover{
+    text-shadow: 12px 12px black;
+}

@@ -1,3 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Silkscreen:wght@700&display=swap');
 .home{
-    border:solid;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-intro{
+    height: 80%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Silkscreen', cursive;
+    color:white;
+    font-size: 6.5rem;
+    overflow-wrap: break-word;
+
+    transition: all 0.5s ease-in-out;
+}
+.schedule{
+    height:20%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Silkscreen', cursive;
+    color:white;
+    font-size: 4rem;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.home-intro:hover, .schedule:hover{
+    text-shadow: 12px 12px black;
 }

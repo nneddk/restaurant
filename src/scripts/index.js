@@ -26,7 +26,7 @@ function header() {
     contactButton.textContent = 'contact us';
     contactButton.classList.add('header-button');
     contactButton.onclick = function(){
-        childChanger(4);
+        childChanger(3);
     }
     
     headerButtons.appendChild(homeButton);
@@ -36,12 +36,13 @@ function header() {
 
     return header;
 }
-import home from './home';
+
 function content(){
   
   const content = document.createElement('div');
   content.setAttribute('id', 'content');
   content.classList.add('content');
+  content.appendChild(home());
   return content;
 }
 function footer(){
@@ -50,12 +51,28 @@ function footer(){
   footer.classList.add('footer');
   return footer;
 }
-
+import home from './home';
+import contact from './contact';
 function childChanger(num){
   const currContent = document.getElementById('content');
-
-  currContent.appendChild(home());
-  console.log(currContent);
+  if(currContent.hasChildNodes()){
+    currContent.removeChild(currContent.lastChild);
+  }
+  switch (num){
+    case 1:
+      currContent.appendChild(home());
+      break;
+    case 2:
+      currContent.appendChild(home());
+      break;
+    case 3:
+      currContent.appendChild(contact());
+      break;
+    default:
+      alert('Error! page not found!');
+      break;
+  }
+  
 }
 
 document.body.appendChild(header());
