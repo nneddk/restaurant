@@ -64,8 +64,8 @@ function foodCarousel(num){
     const foodpic = document.createElement('img');
     foodpic.classList.add('food-pic');
     foodpic.src = foodArray[num].pic;
-    foodpic.width = '600';
-    foodpic.height = '600';
+    foodpic.width = '300';
+    foodpic.height = '300';
 
     const foodname = document.createElement('div');
     foodname.classList.add('food-name');
