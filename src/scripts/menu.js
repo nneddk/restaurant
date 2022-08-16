@@ -50,15 +50,6 @@ export default function menu(){
           }
         foodDiv.appendChild(foodCarousel(++index%limit));
     }
-
-    setInterval(() => {
-        if(foodDiv.hasChildNodes()){
-            foodDiv.removeChild(foodDiv.lastChild);
-          }
-        foodDiv.appendChild(foodCarousel(++index%6));
-    }, 10000);
-    
-
     menu.appendChild(leftBtn);
     menu.appendChild(foodDiv);
     menu.appendChild(rightBtn);

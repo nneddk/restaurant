@@ -32,13 +32,13 @@ html, body{
     transition: all 0.3s;
 }
 .header-button:hover{
-    background-color: yellow; 
+    background-color: orange; 
     color:black;
 }
 
 .content{
     height: 90vh;
-    background-image: linear-gradient(yellow, Blue);
+    background-image: linear-gradient(orange, purple);
     display: flex;
     justify-content: center;
     align-items: center;
