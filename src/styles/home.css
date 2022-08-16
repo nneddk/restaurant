@@ -37,18 +37,13 @@
 
     transition: all 0.5s ease-in-out;
 }
-
 .home-intro:hover, .schedule:hover{
     text-shadow: 12px 12px black;
 }
-
-
 /** bottom would be animation for the shapes */
-
 .shapes {
 	z-index: 1;
 }
-
 .shapes li {
     top: 10vh;
     position:absolute;
@@ -60,8 +55,6 @@
 	animation: animate 25s linear infinite;
 	bottom: calc(-150px - 40vh);
 }
-
-
 .shapes li:nth-child(1) {
 	width: 100px;
 	height: 100px;
@@ -78,7 +71,6 @@
 	animation-duration: 27s;
 	border-radius: 50%;
 }
-
 .shapes li:nth-child(3) {
     right: 15%;
 	width: 130px;

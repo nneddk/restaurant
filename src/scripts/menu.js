@@ -60,21 +60,21 @@ export default function menu(){
 function foodCarousel(num){
     const food = document.createElement('div');
     food.classList.add('food');
-
+    //add food pictures
     const foodpic = document.createElement('img');
     foodpic.classList.add('food-pic');
     foodpic.src = foodArray[num].pic;
     foodpic.width = '300';
     foodpic.height = '300';
-
+    //add food name
     const foodname = document.createElement('div');
     foodname.classList.add('food-name');
     foodname.textContent = foodArray[num].name;
-
+    //add food price
     const foodprice = document.createElement('div');
     foodprice.classList.add('food-price');
     foodprice.textContent = foodArray[num].price;
-
+    //appends it to food div
     food.appendChild(foodpic);
     food.appendChild(foodname);
     food.appendChild(foodprice);
