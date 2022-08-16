@@ -23,7 +23,7 @@
 .food-name, .food-price, .menu-btn{
     font-family: 'Silkscreen', cursive;
     color:white;
-    font-size: 3rem;
+    font-size: 50px;
     transition: all 0.3s;
 }
 
@@ -33,7 +33,7 @@
 }
 
 .food-name{
-    font-size: 5rem;
+    font-size: 80px;
     
 }
 

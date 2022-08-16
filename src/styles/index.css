@@ -9,7 +9,7 @@ html, body{
 .header{
     color: white;
     background-color: black;
-    font-size: 3rem;
+    font-size: 40px;
     display: flex;
     justify-content: space-between;
     padding-left: 15px;
@@ -25,7 +25,7 @@ html, body{
 .header-button{
     background-color:black;
     color:white;
-    font-size: 1.5rem;
+    font-size: 30px;
     width:200px;
     height:100%;
     border:none;

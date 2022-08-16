@@ -7,13 +7,19 @@ class foodData{
         this.price = price;
     }
 }
+import burger from '../pic/burger.png';
+import egg from '../pic/egg.png';
+import apples from '../pic/apples.png';
+import salad from '../pic/salad.png';
+import fry from '../pic/fry.png';
+import chicken from '../pic/chicken.png';
 
-foodArray.push(new foodData('../src/pic/burger.png', 'Burger', '$300'));
-foodArray.push(new foodData('../src/pic/egg.png', 'Just Egg', '$500'));
-foodArray.push(new foodData('../src/pic/apples.png', '2 Apples', '$100'));
-foodArray.push(new foodData('../src/pic/salad.png', 'Maybe Salad', '$20'));
-foodArray.push(new foodData('../src/pic/fry.png', 'French Fry', '$10'));
-foodArray.push(new foodData('../src/pic/chicken.png', 'Alive Chicken', '$200'));
+foodArray.push(new foodData(burger, 'Burger', '$300'));
+foodArray.push(new foodData(egg, 'Just Egg', '$500'));
+foodArray.push(new foodData(apples, '2 Apples', '$100'));
+foodArray.push(new foodData(salad, 'Maybe Salad', '$20'));
+foodArray.push(new foodData(fry, 'French Fry', '$10'));
+foodArray.push(new foodData(chicken, 'Alive Chicken', '$200'));
 
 export default function menu(){
     let index = 0;

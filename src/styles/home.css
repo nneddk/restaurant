@@ -20,7 +20,7 @@
 
     font-family: 'Silkscreen', cursive;
     color:white;
-    font-size: 7rem;
+    font-size: 100px;
     overflow-wrap: break-word;
 
     transition: all 0.5s ease-in-out;
@@ -33,7 +33,7 @@
 
     font-family: 'Silkscreen', cursive;
     color:white;
-    font-size: 4rem;
+    font-size: 60px;
 
     transition: all 0.5s ease-in-out;
 }

@@ -10,12 +10,12 @@
 }
 .about-us{
     font-family: 'Silkscreen', cursive;
-    font-size: 6rem;
+    font-size: 100px;
     color:white;
     transition: all 0.5s;
 }
 .description{
-    font-size: 3rem;
+    font-size: 50px;
     color:white;
 }
 
