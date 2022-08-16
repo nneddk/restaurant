@@ -42,7 +42,7 @@ function content(){
   const content = document.createElement('div');
   content.setAttribute('id', 'content');
   content.classList.add('content');
-  content.appendChild(menu());
+  content.appendChild(home());
   return content;
 }
 function footer(){

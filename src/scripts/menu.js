@@ -8,12 +8,12 @@ class foodData{
     }
 }
 
-foodArray.push(new foodData('pic link', 'Burger', '$300'));
-foodArray.push(new foodData('pic link', 'Just Egg', '$500'));
-foodArray.push(new foodData('pic link', '2 Apples', '$100'));
-foodArray.push(new foodData('pic link', 'Maybe Salad', '$20'));
-foodArray.push(new foodData('pic link', 'Milk', '$10'));
-foodArray.push(new foodData('pic link', 'Alive Chicken', '$200'));
+foodArray.push(new foodData('../src/pic/burger.png', 'Burger', '$300'));
+foodArray.push(new foodData('../src/pic/egg.png', 'Just Egg', '$500'));
+foodArray.push(new foodData('../src/pic/apples.png', '2 Apples', '$100'));
+foodArray.push(new foodData('../src/pic/salad.png', 'Maybe Salad', '$20'));
+foodArray.push(new foodData('../src/pic/fry.png', 'French Fry', '$10'));
+foodArray.push(new foodData('../src/pic/chicken.png', 'Alive Chicken', '$200'));
 
 export default function menu(){
     let index = 0;
@@ -45,14 +45,12 @@ export default function menu(){
         foodDiv.appendChild(foodCarousel(++index%limit));
     }
 
-    /*
     setInterval(() => {
         if(foodDiv.hasChildNodes()){
             foodDiv.removeChild(foodDiv.lastChild);
           }
         foodDiv.appendChild(foodCarousel(++index%6));
     }, 10000);
-    */
     
 
     menu.appendChild(leftBtn);
@@ -66,9 +64,11 @@ function foodCarousel(num){
     const food = document.createElement('div');
     food.classList.add('food');
 
-    const foodpic = document.createElement('div');
+    const foodpic = document.createElement('img');
     foodpic.classList.add('food-pic');
-    foodpic.textContent = foodArray[num].pic;
+    foodpic.src = foodArray[num].pic;
+    foodpic.width = '600';
+    foodpic.height = '600';
 
     const foodname = document.createElement('div');
     foodname.classList.add('food-name');
