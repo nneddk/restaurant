@@ -6,8 +6,13 @@
     display: grid;
     grid-template-columns: 1fr 10fr 1fr;
 }
+.food-div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 .food{
-    height:60%;
+    height:50vmin;
     display:grid;
     grid-template-rows: 10fr 2fr 2fr;;
 
