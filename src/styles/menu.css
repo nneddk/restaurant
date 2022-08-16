@@ -1,0 +1,36 @@
+
+
+.menu{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+}
+
+.food{
+    height:100%;
+    display:grid;
+    grid-template-rows: 10fr 2fr 2fr;
+
+}
+
+.food-name, .food-price, .menu-btn{
+    font-family: 'Silkscreen', cursive;
+    color:white;
+    font-size: 3rem;
+    transition: all 0.3s;
+}
+
+.menu-btn{
+    background: transparent;
+    border:none;
+}
+
+.food-name{
+    font-size: 5rem;
+    
+}
+
+.food-name:hover, .food-price:hover, .menu-btn:hover{
+    text-shadow: 12px 12px black;
+}

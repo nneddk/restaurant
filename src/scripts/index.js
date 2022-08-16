@@ -42,7 +42,7 @@ function content(){
   const content = document.createElement('div');
   content.setAttribute('id', 'content');
   content.classList.add('content');
-  content.appendChild(home());
+  content.appendChild(menu());
   return content;
 }
 function footer(){
@@ -53,6 +53,8 @@ function footer(){
 }
 import home from './home';
 import contact from './contact';
+import menu from './menu';
+
 function childChanger(num){
   const currContent = document.getElementById('content');
   if(currContent.hasChildNodes()){
@@ -63,7 +65,7 @@ function childChanger(num){
       currContent.appendChild(home());
       break;
     case 2:
-      currContent.appendChild(home());
+      currContent.appendChild(menu());
       break;
     case 3:
       currContent.appendChild(contact());
