@@ -15,10 +15,10 @@ export default function contact(){
     email.classList.add('description');
     email.textContent = 'restaurant@email.com';
 
-
+   
+    
     contact.appendChild(aboutUs);
     contact.appendChild(description);
     contact.appendChild(email);
-
     return contact;
 }

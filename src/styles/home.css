@@ -1,29 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Silkscreen:wght@700&display=swap');
 .home{
-    height: 90%;
-    width: 90%;
+    height: 95%;
+    width: 95%;
     display: flex;
-    flex-direction: column;
 }
-
+.home-a{
+    width: 70%;
+    height: 100%;
+}
+.home-b{
+    width: 30%;
+    height: 100%;
+}
 .home-intro{
     height: 80%;
+    width: 100%;
     display:flex;
     align-items: center;
-    justify-content: center;
 
     font-family: 'Silkscreen', cursive;
     color:white;
-    font-size: 6.5rem;
+    font-size: 7rem;
     overflow-wrap: break-word;
 
     transition: all 0.5s ease-in-out;
 }
 .schedule{
     height:20%;
+    width: 100%;
     display:flex;
     align-items: center;
-    justify-content: center;
 
     font-family: 'Silkscreen', cursive;
     color:white;
@@ -34,4 +40,125 @@
 
 .home-intro:hover, .schedule:hover{
     text-shadow: 12px 12px black;
+}
+
+
+/** bottom would be animation for the shapes */
+
+.shapes {
+	z-index: 1;
+}
+
+.shapes li {
+    top: 10vh;
+    position:absolute;
+	list-style: none;
+	width: 20px;
+	height: 20px;
+	background: white;
+    border: white;
+	animation: animate 25s linear infinite;
+	bottom: calc(-150px - 40vh);
+}
+
+
+.shapes li:nth-child(1) {
+	width: 100px;
+	height: 100px;
+	animation-delay: 0s;
+	animation-duration: 12s;
+	border-radius: 50%;
+}
+
+.shapes li:nth-child(2) {
+    right: 10%;
+	width: 120px;
+	height: 120px;
+	animation-delay: 0s;
+	animation-duration: 27s;
+	border-radius: 50%;
+}
+
+.shapes li:nth-child(3) {
+    right: 15%;
+	width: 130px;
+	height: 130px;
+	animation-delay: 0s;
+	animation-duration: 15s;
+}
+
+.shapes li:nth-child(4) {
+    right: 20%;
+	width: 110px;
+	height: 110px;
+	animation-delay: 0s;
+	animation-duration: 6s;
+	border-radius: 50%;
+}
+
+.shapes li:nth-child(5) {
+    right: 25%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 0s;
+	animation-duration: 30s;
+}
+
+
+.shapes li:nth-child(6) {
+    right: 10%;
+	width: 90px;
+	height: 90px;
+	animation-delay: 0s;
+	animation-duration: 18s;
+	border-radius: 50%;
+}
+
+.shapes li:nth-child(7) {
+    right: 5%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 0s;
+	animation-duration: 33s;
+
+}
+
+.shapes li:nth-child(8) {
+	width: 80px;
+	height: 80px;
+	animation-delay: 0s;
+	animation-duration: 21s;
+	border-radius: 50%;
+}
+
+.shapes li:nth-child(9) {
+    right: 15%;
+	width: 100px;
+	height: 100px;
+	animation-delay: 0s;
+	animation-duration: 12s;
+	border-radius: 50%;
+}
+
+.shapes li:nth-child(10) {
+    right: 20%;
+	width: 120px;
+	height: 120px;
+	animation-delay: 0s;
+	animation-duration: 9s;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0) rotate(0deg);
+		opacity: 0;
+	}
+	50% {
+		transform: translateY(50vh) rotate(360deg);
+		opacity: 1;
+	}
+	100% {
+		transform: translateY(70vh) rotate(720deg);
+		opacity: 0;
+	}
 }
