@@ -7,7 +7,7 @@
     grid-template-columns: 1fr 10fr 1fr;
 }
 .food{
-    height:70%;
+    height:60%;
     display:grid;
     grid-template-rows: 10fr 2fr 2fr;;
 
